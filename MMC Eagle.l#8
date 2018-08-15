@@ -4724,10 +4724,15 @@ Source: VISHAY wscwsn.pdf</description>
 <pad name="1" x="-2.5" y="0" drill="0.9"/>
 <pad name="2" x="0" y="0" drill="0.9"/>
 <pad name="3" x="2.5" y="0" drill="0.9"/>
-<wire x1="-5.8" y1="2" x2="5.8" y2="2" width="0.127" layer="21"/>
-<wire x1="-5.8" y1="-2" x2="5.8" y2="-2" width="0.127" layer="21"/>
+<wire x1="-5.8" y1="2" x2="-0.5" y2="2" width="0.127" layer="21"/>
+<wire x1="0.5" y1="2" x2="5.8" y2="2" width="0.127" layer="21"/>
+<wire x1="-5.8" y1="-2" x2="-0.5" y2="-2" width="0.127" layer="21"/>
+<wire x1="0.5" y1="-2" x2="5.8" y2="-2" width="0.127" layer="21"/>
 <wire x1="5.8" y1="2" x2="5.8" y2="-2" width="0.127" layer="21"/>
 <wire x1="-5.8" y1="2" x2="-5.8" y2="-2" width="0.127" layer="21"/>
+<wire x1="-0.5" y1="2" x2="0.5" y2="2" width="0.127" layer="21" curve="180"/>
+<wire x1="-0.5" y1="-2" x2="0.5" y2="-2" width="0.127" layer="21" curve="-180"/>
+<text x="-2" y="-3" size="0.8128" layer="21">EG1218</text>
 </package>
 </packages>
 <packages3d>

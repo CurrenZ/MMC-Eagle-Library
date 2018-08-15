@@ -1,11 +1,12 @@
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE eagle SYSTEM "eagle.dtd">
 <eagle version="9.1.2">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.5" unitdist="mm" unit="mm" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="mm" altunit="mm"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
@@ -148,21 +149,21 @@ by exp-lbrs.ulp</description>
 <package name="SOP95P270X145-6" urn="urn:adsk.eagle:footprint:4388813/1">
 <description>6-SOP, 0.95 mm pitch, 2.70 mm span, 2.90 X 1.55 X 1.45 mm body
 &lt;p&gt;6-pin SOP package with 0.95 mm pitch, 2.70 mm span with body size 2.90 X 1.55 X 1.45 mm&lt;/p&gt;</description>
-<circle x="-1.4266" y="1.7488" layer="21" width="0.0000" radius="0.2500"/>
-<wire x1="-0.9000" y1="1.5588" x2="0.9000" y2="1.5588" width="0.1200" layer="21" cap="round"/>
-<wire x1="-0.9000" y1="-1.5588" x2="0.9000" y2="-1.5588" width="0.1200" layer="21" cap="round"/>
-<wire x1="0.9000" y1="-1.5500" x2="-0.9000" y2="-1.5500" width="0.1200" layer="51" cap="flat"/>
-<wire x1="-0.9000" y1="-1.5500" x2="-0.9000" y2="1.5500" width="0.1200" layer="51" cap="flat"/>
-<wire x1="-0.9000" y1="1.5500" x2="0.9000" y2="1.5500" width="0.1200" layer="51" cap="flat"/>
-<wire x1="0.9000" y1="1.5500" x2="0.9000" y2="-1.5500" width="0.1200" layer="51" cap="flat"/>
-<smd name="1" x="-1.2472" y="0.9500" dx="1.4118" dy="0.5895" layer="1"/>
-<smd name="2" x="-1.2472" y="0.0000" dx="1.4118" dy="0.5895" layer="1"/>
-<smd name="3" x="-1.2472" y="-0.9500" dx="1.4118" dy="0.5895" layer="1"/>
-<smd name="4" x="1.2472" y="-0.9500" dx="1.4118" dy="0.5895" layer="1"/>
-<smd name="5" x="1.2472" y="0.0000" dx="1.4118" dy="0.5895" layer="1"/>
-<smd name="6" x="1.2472" y="0.9500" dx="1.4118" dy="0.5895" layer="1"/>
-<text x="0.0000" y="2.6338" size="1.2700" layer="25" font="proportional" ratio="8" align="bottom-center" distance="50">&gt;NAME</text>
-<text x="0.0000" y="-2.1938" size="1.2700" layer="27" font="proportional" ratio="8" align="top-center" distance="50">&gt;VALUE</text>
+<circle x="-1.4266" y="1.7488" radius="0.25" width="0" layer="21"/>
+<wire x1="-0.9" y1="1.5588" x2="0.9" y2="1.5588" width="0.12" layer="21"/>
+<wire x1="-0.9" y1="-1.5588" x2="0.9" y2="-1.5588" width="0.12" layer="21"/>
+<wire x1="0.9" y1="-1.55" x2="-0.9" y2="-1.55" width="0.12" layer="51"/>
+<wire x1="-0.9" y1="-1.55" x2="-0.9" y2="1.55" width="0.12" layer="51"/>
+<wire x1="-0.9" y1="1.55" x2="0.9" y2="1.55" width="0.12" layer="51"/>
+<wire x1="0.9" y1="1.55" x2="0.9" y2="-1.55" width="0.12" layer="51"/>
+<smd name="1" x="-1.2472" y="0.95" dx="1.4118" dy="0.5895" layer="1"/>
+<smd name="2" x="-1.2472" y="0" dx="1.4118" dy="0.5895" layer="1"/>
+<smd name="3" x="-1.2472" y="-0.95" dx="1.4118" dy="0.5895" layer="1"/>
+<smd name="4" x="1.2472" y="-0.95" dx="1.4118" dy="0.5895" layer="1"/>
+<smd name="5" x="1.2472" y="0" dx="1.4118" dy="0.5895" layer="1"/>
+<smd name="6" x="1.2472" y="0.95" dx="1.4118" dy="0.5895" layer="1"/>
+<text x="0" y="2.6338" size="1.27" layer="25" align="bottom-center">&gt;NAME</text>
+<text x="0" y="-2.1938" size="1.27" layer="27" align="top-center">&gt;VALUE</text>
 </package>
 <package name="AT_TINY_85" urn="urn:adsk.eagle:footprint:4432897/1">
 <description>&lt;b&gt;Dual In Line Package&lt;/b&gt;</description>
@@ -4719,6 +4720,19 @@ Source: VISHAY wscwsn.pdf</description>
 <text x="-0.635" y="1.27" size="1.27" layer="25">&gt;NAME</text>
 <text x="-0.635" y="-2.54" size="1.27" layer="27">&gt;VALUE</text>
 </package>
+<package name="EG1218">
+<pad name="1" x="-2.5" y="0" drill="0.9"/>
+<pad name="2" x="0" y="0" drill="0.9"/>
+<pad name="3" x="2.5" y="0" drill="0.9"/>
+<wire x1="-5.8" y1="2" x2="-0.5" y2="2" width="0.127" layer="21"/>
+<wire x1="0.5" y1="2" x2="5.8" y2="2" width="0.127" layer="21"/>
+<wire x1="-5.8" y1="-2" x2="-0.5" y2="-2" width="0.127" layer="21"/>
+<wire x1="0.5" y1="-2" x2="5.8" y2="-2" width="0.127" layer="21"/>
+<wire x1="5.8" y1="2" x2="5.8" y2="-2" width="0.127" layer="21"/>
+<wire x1="-5.8" y1="2" x2="-5.8" y2="-2" width="0.127" layer="21"/>
+<wire x1="-0.5" y1="2" x2="0.5" y2="2" width="0.127" layer="21" curve="180"/>
+<wire x1="-0.5" y1="-2" x2="0.5" y2="-2" width="0.127" layer="21" curve="-180"/>
+</package>
 </packages>
 <packages3d>
 <package3d name="DIP787W55P254L958H533Q8B" urn="urn:adsk.eagle:package:4432898/2" type="model">
@@ -6760,7 +6774,7 @@ NS Package M08A</description>
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="GND" prefix="GND" urn="urn:adsk.eagle:component:3491644/4">
+<deviceset name="GND" urn="urn:adsk.eagle:component:3491644/4" prefix="GND">
 <description>&lt;h3&gt;Ground Supply Symbol&lt;/h3&gt;
 &lt;p&gt;Generic signal ground supply symbol.&lt;/p&gt;</description>
 <gates>
@@ -6774,7 +6788,7 @@ NS Package M08A</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="PINHEAD_PINHD-1X4" prefix="JP" uservalue="yes" urn="urn:adsk.eagle:component:3491638/4">
+<deviceset name="PINHEAD_PINHD-1X4" urn="urn:adsk.eagle:component:3491638/4" prefix="JP" uservalue="yes">
 <description>&lt;b&gt;PIN HEADER&lt;/b&gt;</description>
 <gates>
 <gate name="A" symbol="PINHD4" x="0" y="0"/>
@@ -6833,7 +6847,7 @@ NS Package M08A</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="BK-889" prefix="G" urn="urn:adsk.eagle:component:3634889/1">
+<deviceset name="BK-889" urn="urn:adsk.eagle:component:3634889/1" prefix="G">
 <description>&lt;b&gt;CION CELL RETAINER FOR 23mm DIA. BATTERIES&lt;/B&gt;&lt;p&gt;
 BR2320, CL2320, CR2320, BR2325, CR2325, DL2325, BR2330, CL2330&lt;br&gt;
 Source: MEMORY PROTECTION DEVICES; Inc.  BK-889-datasheet.pdf</description>
@@ -6855,7 +6869,7 @@ Source: MEMORY PROTECTION DEVICES; Inc.  BK-889-datasheet.pdf</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="AQY212EH" prefix="U" urn="urn:adsk.eagle:component:4126882/2">
+<deviceset name="AQY212EH" urn="urn:adsk.eagle:component:4126882/2" prefix="U">
 <gates>
 <gate name="A" symbol="AQY" x="0" y="0"/>
 </gates>
@@ -6879,7 +6893,7 @@ Source: MEMORY PROTECTION DEVICES; Inc.  BK-889-datasheet.pdf</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="ADAFRUIT_JST_2PIN" prefix="CN" uservalue="yes" urn="urn:adsk.eagle:component:3491640/2">
+<deviceset name="ADAFRUIT_JST_2PIN" urn="urn:adsk.eagle:component:3491640/2" prefix="CN" uservalue="yes">
 <description>&lt;b&gt;JST 2-Pin Connectors of various flavors&lt;/b&gt;
 
 &lt;ul&gt;
@@ -6961,7 +6975,7 @@ Source: MEMORY PROTECTION DEVICES; Inc.  BK-889-datasheet.pdf</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="2N3904" prefix="T" urn="urn:adsk.eagle:component:3634089/1">
+<deviceset name="2N3904" urn="urn:adsk.eagle:component:3634089/1" prefix="T">
 <description>&lt;b&gt;NPN TRANSISTOR&lt;/b&gt;</description>
 <gates>
 <gate name="G1" symbol="NPN" x="0" y="0"/>
@@ -6982,7 +6996,7 @@ Source: MEMORY PROTECTION DEVICES; Inc.  BK-889-datasheet.pdf</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="LED-RGB" prefix="D" uservalue="yes" urn="urn:adsk.eagle:component:3491645/5">
+<deviceset name="LED-RGB" urn="urn:adsk.eagle:component:3491645/5" prefix="D" uservalue="yes">
 <description>&lt;h3&gt;LED-RGB Common Cathode&lt;/h3&gt;
 
 &lt;li&gt;&lt;b&gt;Packages:&lt;/b&gt;&lt;/li&gt;
@@ -7052,7 +7066,7 @@ Source: MEMORY PROTECTION DEVICES; Inc.  BK-889-datasheet.pdf</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="ADAFRUIT_31-XX" prefix="S" uservalue="yes" urn="urn:adsk.eagle:component:3491642/2">
+<deviceset name="ADAFRUIT_31-XX" urn="urn:adsk.eagle:component:3491642/2" prefix="S" uservalue="yes">
 <description>&lt;b&gt;OMRON SWITCH&lt;/b&gt;
 
 Now with beefier pads!</description>
@@ -7086,7 +7100,7 @@ Now with beefier pads!</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="L4931CZ33-AP" prefix="CR" urn="urn:adsk.eagle:component:4125992/2">
+<deviceset name="L4931CZ33-AP" urn="urn:adsk.eagle:component:4125992/2" prefix="CR">
 <gates>
 <gate name="A" symbol="L4931CZ33-AP" x="0" y="0"/>
 </gates>
@@ -7109,7 +7123,7 @@ Now with beefier pads!</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="F-1X04-" prefix="J" urn="urn:adsk.eagle:component:3493381/4">
+<deviceset name="F-1X04-" urn="urn:adsk.eagle:component:3493381/4" prefix="J">
 <description>&lt;b&gt;FEMALE HEADER&lt;/b&gt;</description>
 <gates>
 <gate name="G$1" symbol="F1X04-1" x="0" y="0"/>
@@ -7240,7 +7254,7 @@ Now with beefier pads!</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="PINHEAD_PINHD-1X3" prefix="JP" uservalue="yes" urn="urn:adsk.eagle:component:3491639/4">
+<deviceset name="PINHEAD_PINHD-1X3" urn="urn:adsk.eagle:component:3491639/4" prefix="JP" uservalue="yes">
 <description>&lt;b&gt;PIN HEADER&lt;/b&gt;</description>
 <gates>
 <gate name="A" symbol="PINHD3" x="0" y="0"/>
@@ -7274,7 +7288,7 @@ Now with beefier pads!</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="LED" prefix="D" uservalue="yes" urn="urn:adsk.eagle:component:3634165/2">
+<deviceset name="LED" urn="urn:adsk.eagle:component:3634165/2" prefix="D" uservalue="yes">
 <description>&lt;b&gt;LED (Generic)&lt;/b&gt;
 &lt;p&gt;Standard schematic elements and footprints for 5mm, 3mm, 1206, and 0603 sized LEDs. Generic LEDs with no color specified.&lt;/p&gt;</description>
 <gates>
@@ -7393,7 +7407,7 @@ Now with beefier pads!</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="4936B" prefix="U" urn="urn:adsk.eagle:component:4704334/2">
+<deviceset name="4936B" urn="urn:adsk.eagle:component:4704334/2" prefix="U">
 <gates>
 <gate name="A" symbol="LM34DMX" x="0" y="0"/>
 </gates>
@@ -7463,7 +7477,7 @@ Now with beefier pads!</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="BUZZER" prefix="LS" urn="urn:adsk.eagle:component:3634164/3">
+<deviceset name="BUZZER" urn="urn:adsk.eagle:component:3634164/3" prefix="LS">
 <description>&lt;h3&gt;Buzzer&lt;/h3&gt;
 &lt;p&gt;Small round buzzers that operate around the audible 2kHz range. You can use these as speakers to create simple music or user interfaces.&lt;/p&gt;
 &lt;p&gt;Variant Overview:
@@ -7608,7 +7622,7 @@ Now with beefier pads!</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="MPX*****" prefix="PS" uservalue="yes" urn="urn:adsk.eagle:component:3491862/2">
+<deviceset name="MPX*****" urn="urn:adsk.eagle:component:3491862/2" prefix="PS" uservalue="yes">
 <description>Generic MPX pressure sensor</description>
 <gates>
 <gate name="G$1" symbol="MPX_SYMB" x="0" y="0"/>
@@ -7939,7 +7953,7 @@ Now with beefier pads!</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="0.1UF" prefix="C" urn="urn:adsk.eagle:component:3493608/2">
+<deviceset name="0.1UF" urn="urn:adsk.eagle:component:3493608/2" prefix="C">
 <description>&lt;h3&gt;0.1µF ceramic capacitors&lt;/h3&gt;
 &lt;p&gt;A capacitor is a passive two-terminal electrical component used to store electrical energy temporarily in an electric field.&lt;/p&gt;</description>
 <gates>
@@ -8023,7 +8037,7 @@ Now with beefier pads!</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="F-1X03-" prefix="J" urn="urn:adsk.eagle:component:3529761/2">
+<deviceset name="F-1X03-" urn="urn:adsk.eagle:component:3529761/2" prefix="J">
 <description>&lt;b&gt;FEMALE HEADER&lt;/b&gt;</description>
 <gates>
 <gate name="G$1" symbol="F1X03" x="0" y="0"/>
@@ -8083,7 +8097,7 @@ Now with beefier pads!</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="ADAFRUIT_FEATHERWING" prefix="MS" urn="urn:adsk.eagle:component:3491641/2">
+<deviceset name="ADAFRUIT_FEATHERWING" urn="urn:adsk.eagle:component:3491641/2" prefix="MS">
 <gates>
 <gate name="G$1" symbol="ADAFRUIT_MICROSHIELD" x="-25.4" y="-15.24"/>
 </gates>
@@ -8186,7 +8200,7 @@ Now with beefier pads!</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="ATTINY85-20PU" prefix="U" urn="urn:adsk.eagle:component:4516142/2">
+<deviceset name="ATTINY85-20PU" urn="urn:adsk.eagle:component:4516142/2" prefix="U">
 <gates>
 <gate name="A" symbol="ATTINY85-20PU" x="0" y="0"/>
 </gates>
@@ -8214,7 +8228,7 @@ Now with beefier pads!</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="4049" prefix="IC" urn="urn:adsk.eagle:component:3634091/1">
+<deviceset name="4049" urn="urn:adsk.eagle:component:3634091/1" prefix="IC">
 <description>Hex inverting &lt;b&gt;BUFFER&lt;/b&gt;</description>
 <gates>
 <gate name="A" symbol="4049" x="12.7" y="22.86" swaplevel="1"/>
@@ -8299,7 +8313,7 @@ Now with beefier pads!</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="ATTINY84-20PU" prefix="U" urn="urn:adsk.eagle:component:4704289/2">
+<deviceset name="ATTINY84-20PU" urn="urn:adsk.eagle:component:4704289/2" prefix="U">
 <gates>
 <gate name="A" symbol="ATTINY84-20PU" x="0" y="0"/>
 </gates>
@@ -8333,7 +8347,7 @@ Now with beefier pads!</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="LM393" prefix="IC" urn="urn:adsk.eagle:component:3670881/3">
+<deviceset name="LM393" urn="urn:adsk.eagle:component:3670881/3" prefix="IC">
 <description>&lt;b&gt;COMPARATOR&lt;/b&gt;</description>
 <gates>
 <gate name="A" symbol="OPAMP" x="5.08" y="0" swaplevel="1"/>
@@ -8379,7 +8393,7 @@ Now with beefier pads!</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="1N4148" prefix="D" urn="urn:adsk.eagle:component:3634090/1">
+<deviceset name="1N4148" urn="urn:adsk.eagle:component:3634090/1" prefix="D">
 <description>&lt;B&gt;DIODE&lt;/B&gt;&lt;p&gt;
 high speed (Philips)</description>
 <gates>
@@ -8412,7 +8426,7 @@ high speed (Philips)</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="SWITCH-SPDT" prefix="S" uservalue="yes" urn="urn:adsk.eagle:component:3491643/5">
+<deviceset name="SWITCH-SPDT" urn="urn:adsk.eagle:component:3491643/5" prefix="S" uservalue="yes">
 <description>&lt;h3&gt;Single Pole, Double Throw (SPDT) Switch&lt;/h3&gt;
 &lt;p&gt;Single-pole, double-throw (SPDT) switch.&lt;/p&gt;
 &lt;h4&gt;Variant Overview&lt;/h4&gt;
@@ -8525,7 +8539,7 @@ high speed (Philips)</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="RESISTOR_R-US_" prefix="R" uservalue="yes" urn="urn:adsk.eagle:component:3491637/5">
+<deviceset name="RESISTOR_R-US_" urn="urn:adsk.eagle:component:3491637/5" prefix="R" uservalue="yes">
 <description>&lt;B&gt;RESISTOR&lt;/B&gt;, American symbol</description>
 <gates>
 <gate name="G$1" symbol="R-US" x="0" y="0"/>
@@ -9547,6 +9561,18 @@ high speed (Philips)</description>
 <package3dinstances>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:3491636/1"/>
 </package3dinstances>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="EG1218">
+<gates>
+<gate name="A" symbol="SLIDE-SWITCH" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
 <technologies>
 <technology name=""/>
 </technologies>
